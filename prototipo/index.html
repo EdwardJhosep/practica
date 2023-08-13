@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicados - Colegio Isaac Newton</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Estilos para el encabezado */
+        header { 
+            background-color: #0a64da;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-center-image {
+            max-width: 550px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin: 0 auto; /* Centra horizontalmente */
+            margin-left: 120px; /* Ajusta el margen izquierdo según lo necesario */
+            display: block;
+        }
+        
+        
+        
+
+        .header-logo {
+            max-width: 120px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            white-space: nowrap; /* Evita el salto de línea */
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .contact-button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-top: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #333;
+        }
+        
+        .contact-icons {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        
+        .contact-icons img {
+            max-width: 25px;
+            margin-right: 5px;
+        }
+
+        .contact-info img {
+            max-height: 20px;
+            margin-right: 5px;
+        }
+         /* Estilos para el menú */
+         .menu {
+            background-color: #e0dada;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #0868f7;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: #4eb2ec;
+            z-index: 1;
+        }
+
+        .menu-item:hover .submenu {
+            display: block;
+        }
+
+        .submenu a {
+            display: block;
+            padding: 5px 10px;
+        }
+    .menu-links {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 5px 10px; /* Ajusta el espaciado vertical y horizontal */
+        transition: background-color 0.3s ease;
+    }
+
+    .menu-links a:hover {
+        background-color: #555;
+    }
+
+    
+.menu-images {
+    display: flex;
+    align-items: center;
+}
+
+.menu-images a {
+    display: inline-block;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-images img {
+    max-width: 40px; /* Ajusta este valor según lo necesites */
+    height: auto;
+}
+
+.menu-images a:hover {
+    background-color: #555;
+}
+        
+        /* Estilos para los comunicados */
+        .comunicados {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .comunicados p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+    /* Estilos para los botones de redes sociales */
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .redes-sociales a {
+        display: inline-block;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .redes-sociales a:hover {
+        transform: scale(1.2);
+    }
+
+    .redes-sociales img {
+        width: 40px;
+        height: 40px;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img class="header-logo" src="https://www.ieisaacnewton.edu.pe/portal/wp-content/uploads/2018/10/icono100x100.png" alt="Logo del colegio">
+            <h1 class="header-title">Colegio Isaac Newton</h1>
+            <img class="header-center-image" src="https://scontent.fhuu1-1.fna.fbcdn.net/v/t39.30808-6/364007395_682259350585021_1674016417785714515_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=e3f864&_nc_ohc=dYrjyBC1FKMAX_M_Sia&_nc_ht=scontent.fhuu1-1.fna&oh=00_AfD8futSdfcx2YhVPUw-eWHngoYzjEbDwT-dicGA9Nz8eQ&oe=64D8126D" alt="Imagen en el centro">
+        </div>
+        <div class="contact-info">
+            <div class="contact-buttons">
+                <button class="contact-button" onclick="window.location.href = 'tel:982878226';">982878226 <img src="https://i.pinimg.com/originals/c5/47/0f/c5470f458cfafc136836dfed829a555e.png" alt="Teléfono"></button>
+                <button class="contact-button" onclick="window.location.href = 'mailto:informes@ieisaacnewton.edu.pe';">informes@ieisaacnewton.edu.pe <img src="https://img.freepik.com/iconos-gratis/correo-electronico_318-304876.jpg?w=360" alt="Correo"></button>
+                <p>Jr. Dos de mayo 1450, Huánuco <img src="https://static.vecteezy.com/system/resources/previews/006/065/170/non_2x/gps-map-navigation-direction-solid-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg" alt="Dirección"></p>
+            </div>
+        </div>
+    </header>
+    <!-- Menú -->
+    <nav class="menu">
+        <a href="#">Inicio</a>
+        <div class="menu-item">
+            <a href="#">Nosotros</a>
+            <div class="submenu">
+                <a href="#">Bienvenida del Director</a>
+                <a href="#">Misión & Visión</a>
+                <a href="#">Infraestructura</a>
+                <a href="#">Docentes</a>
+                <a href="#">Calendario Escolar 2023</a>
+                <a href="#">Reglamento Interno</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Niveles Académicos</a>
+            <div class="submenu">
+                <a href="#">Inicial</a>
+                <a href="#">Primaria</a>
+                <a href="#">Secundaria</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Áreas Académicas</a>
+            <div class="submenu">
+                <a href="#">Comunicación</a>
+                <a href="#">Matemática</a>
+                <a href="#">Ciencia y tecnología</a>
+                <a href="#">Computación</a>
+                <a href="#">Inglés</a>
+                <a href="#">Arte</a>
+                <a href="#">Educación para el trabajo</a>
+                <a href="#">Educación religiosa</a>
+                <a href="#">Educación física</a>
+                <a href="#">Formación ciudadana y cívica</a>
+                <a href="#">Persona, Familia y Relaciones Humanas</a>
+                <a href="#">Historia, Geografía y Economía</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">ADMISIÓN 2023</a>
+            <div class="submenu">
+                <a href="#">Información de ingreso 2023</a>
+                <a href="#">Vacantes 2023</a>
+                <a href="#">Pre Inscripción</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="#">Logros & Publicaciones</a>
+            <div class="submenu">
+                <a href="#">Publicaciones</a>
+                <a href="#">Noticias</a>
+                <a href="#">Logros obtenidos</a>
+            </div>
+        </div>
+        <a href="#">Egresados</a>
+        <a href="#">Atención al usuario</a>
+    <a href="#">Egresados</a>
+    <a href="#">Atención al usuario</a>
+        <div class="menu-images">
+            <a href="enlace-de-whatsapp" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/WhatsApp_logo-color-vertical.svg/768px-WhatsApp_logo-color-vertical.svg.png" alt="WhatsApp">
+            </a>
+            <a href="enlace-de-facebook" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1200px-Facebook_icon_2013.svg.png" alt="Facebook">
+            </a>
+            <a href="enlace-de-tiktok" target="_blank">
+                <img src="https://assets.stickpng.com/images/627bb8132bc3a3762a1d0b98.png" alt="TikTok">
+            </a>
+            <a href="enlace-de-instagram" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram">
+            </a>
+        </div>
+    </nav>
+    
+    
+    
+
+    <section class="comunicados">
+        <p>¡𝑷𝑨𝑹𝑻𝑰𝑪𝑰𝑷𝑨𝑴𝑶𝑺 𝑬𝑵 𝑳𝑨 𝑭𝑬𝑹𝑰𝑨 𝑰𝑵𝑭𝑶𝑹𝑴𝑨𝑻𝑰𝑽𝑨!</p>
+        <p>Colegio Isaac Newton</p>
+        <p>Educando para el futuro</p>
+        <p>982878226</p>
+        <p>informes@ieisaacnewton.edu.pe</p>
+        <!-- Resto del contenido de los comunicados -->
+
+        <!-- Insertar video de Facebook -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; Todos los derechos reservados. Colegio Isaac Newton</p>
+        <p>University Hub por WEN Themes</p>
+    </footer>
+
+    <script>
+        // Código JavaScript aquí (si es necesario)
+    </script>
+</body>
+</html>
